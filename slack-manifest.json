@@ -1,0 +1,36 @@
+{
+  "display_information": {
+    "name": "CS CT 한 문제 연습",
+    "description": "개인 대화에서 CS 질문과 기초 수리 문제를 한 개씩 연습합니다.",
+    "background_color": "#23415A"
+  },
+  "features": {
+    "bot_user": {
+      "display_name": "한 문제 연습",
+      "always_online": false
+    },
+    "app_home": {
+      "home_tab_enabled": false,
+      "messages_tab_enabled": true,
+      "messages_tab_read_only_enabled": false
+    }
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": ["chat:write", "im:history"]
+    }
+  },
+  "settings": {
+    "event_subscriptions": {
+      "request_url": "https://example.com/slack/events",
+      "bot_events": ["message.im", "app_home_opened"]
+    },
+    "interactivity": {
+      "is_enabled": true,
+      "request_url": "https://example.com/slack/interactions"
+    },
+    "org_deploy_enabled": false,
+    "socket_mode_enabled": false,
+    "token_rotation_enabled": false
+  }
+}
